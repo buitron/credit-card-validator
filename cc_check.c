@@ -1,6 +1,7 @@
-# import <cs50.h>
 # import <stdio.h>
+# import <stdlib.h>
 # import <math.h>
+
 
 int first_digit(long n);
 int second_digit(long n, double length);
@@ -12,8 +13,9 @@ int main(void)
     
     do
     {
-        card_num = get_long("Number: ");
-        num_length = floor(log10(llabs(card_num))) + 1;
+        printf("Number: ");
+        scanf("%ld", &card_num);
+        num_length = floor(log10(labs(card_num))) + 1;
     } while(num_length != 13 && num_length != 15 && num_length != 16);
     
     // Get first and second digit
