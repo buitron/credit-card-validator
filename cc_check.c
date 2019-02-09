@@ -1,6 +1,6 @@
-# import <stdio.h>
-# import <stdlib.h>
-# import <math.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <math.h>
 
 
 int first_digit(long n);
